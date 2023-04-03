@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Sign In
+{% endblock %}
+
+{% block container %}
+    <div class="row">
+        <div class="col-lg-6 mb-lg-0 col-12 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <p>
+                                <strong>Registered users</strong>
+                            </p>
+                            <p>
+                                If you have a user account, log in with your email address.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <form action="" method="post">
+                                <div class="form-group mb-3">
+                                    <label class="form-label" for="email">
+                                        <strong>
+                                            <span class="text-danger">*</span> Email:
+                                        </strong>
+                                    </label>
+                                    <input type="email" id="email" name="email" class="form-control rounded-1">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="form-label" for="password">
+                                        <strong>
+                                            <span class="text-danger">*</span> Password:
+                                        </strong>
+                                    </label>
+                                    <input type="password" id="password" name="password" class="form-control rounded-1">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <button type="submit" class="btn btn-primary rounded-1 w-100">
+                                        <strong>Sign In</strong>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-12">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <p>
+                                <strong>Create account</strong>
+                            </p>
+                            <p>
+                                This account provides you opportunity to sell products on our platform.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row h-100">
+                        <div class="col-12">
+                            <form action="" method="post">
+                                <div class="form-group mb-3">
+                                    <a href="{{ path('sign.up') }}" type="submit"
+                                       class="btn btn-primary rounded-1 w-100">
+                                        <strong>Sign Up</strong>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

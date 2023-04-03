@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Sign Up
+{% endblock %}
+
+{% block container %}
+    <div class="row">
+        <div class="offset-lg-3 col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="m-0">
+                                <strong>
+                                    Personal information's
+                                </strong>
+                            </h3>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12">
+                            <form method="post">
+                                <div class="form-group mb-3">
+                                    <label class="form-label" for="name">
+                                        <strong>
+                                            <span class="text-danger">*</span> Name:
+                                        </strong>
+                                    </label>
+                                    <input type="text" id="name" name="name" class="form-control rounded-1">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="form-label" for="surname">
+                                        <strong>
+                                            <span class="text-danger">*</span> Surname:
+                                        </strong>
+                                    </label>
+                                    <input type="text" id="surname" name="surname" class="form-control rounded-1">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="form-label" for="email">
+                                        <strong>
+                                            <span class="text-danger">*</span> Email:
+                                        </strong>
+                                    </label>
+                                    <input type="email" id="email" name="email" class="form-control rounded-1">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="form-label" for="password">
+                                        <strong>
+                                            <span class="text-danger">*</span> Password:
+                                        </strong>
+                                    </label>
+                                    <input type="password" id="password" name="password" class="form-control rounded-1">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="form-label" for="retype-password">
+                                        <strong>
+                                            <span class="text-danger">*</span> Retype password:
+                                        </strong>
+                                    </label>
+                                    <input type="password" id="retype-password" name="retype-password"
+                                           class="form-control rounded-1">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <button type="submit" class="btn btn-primary w-100 rounded-1">
+                                        <strong>Sign Up</strong>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
